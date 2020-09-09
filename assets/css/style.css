@@ -43,6 +43,11 @@
   margin-bottom: 30px;
 }
 
+.panel-body {
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+}
+
 .panel-info > .panel-heading {
   color: #ffffff;
   background-color: #df8a13;
@@ -51,9 +56,22 @@
   letter-spacing: 0.2em;
 }
 
+/*
+.panel-info > .panel-heading {
+    color: $color-light;
+    background-color: $color-accent;
+    border: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+}*/
+/*
 .panel-body {
-  border: 1px solid #dddddd;
-  border-radius: 0 0 4px 4px;
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+}
+*/
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
 
 html {
@@ -106,6 +124,15 @@ h2 {
 
 .left-sidebar .panel:last-of-type {
   margin-bottom: 0;
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.vertical-slider img {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
