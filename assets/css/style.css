@@ -160,6 +160,9 @@ h2 {
 }
 
 .new-films-item__image {
+  display: block;
+  height: auto;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -168,6 +171,63 @@ h2 {
   content: "";
   width: 100%;
   margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid #f6ce95;
+}
+
+.top-week {
+  position: relative;
+  overflow: hidden;
+}
+
+.top-week-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+
+.top-week-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-bottom: 15px;
+}
+
+.top-week-item__thumbnail {
+  margin-bottom: 0;
+}
+
+.top-week-item__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.top-week-item__image {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.top-week-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid #f6ce95;
+}
+
+.top-week-title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
   border-bottom: 3px solid #f6ce95;
 }
 
@@ -315,6 +375,10 @@ h2 {
     font-size: 3rem;
     margin: -7.5px 0 45px;
   }
+  h2 {
+    font-size: 2.5rem;
+    margin: 60px 0 45px 45px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -345,5 +409,9 @@ h2 {
   h1 {
     font-size: 2rem;
     margin: 0 0 30px;
+  }
+  h2 {
+    font-size: 1.75rem;
+    margin: 45px 0 30px 45px;
   }
 }
