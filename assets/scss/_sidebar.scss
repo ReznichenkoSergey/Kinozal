@@ -39,8 +39,7 @@
 .site-news {
     &-item {
         clear: both;
-        position: relative;
-
+        
         &:not(:last-child) {
             min-height: 85px;
             margin-bottom: $gap;
