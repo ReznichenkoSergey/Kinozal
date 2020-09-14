@@ -6,6 +6,8 @@
     & .navbar-nav {
         & > li > a {
             text-align: center;
+            transition: background-color 0.5s;
+
             @include sm-min {
                 border-radius: 4px;
             }
@@ -79,20 +81,10 @@
         letter-spacing: 0.2em;
     }
 }
-/*
-.panel-info > .panel-heading {
-    color: $color-light;
-    background-color: $color-accent;
-    border: none;
-    font-size: 1.2rem;
-    letter-spacing: 0.2em;
-}*/
-/*
-.panel-body {
-    border: 1px solid $color-gray;
-    border-radius: 0 0 4px 4px;
-}
-*/
-.input-group-lg>.form-control {
-    font-size: 0.875rem;
+
+.input {
+    &-lg,
+    &-group-lg > .form-control {
+        font-size: 0.875rem;
+    }
 }
