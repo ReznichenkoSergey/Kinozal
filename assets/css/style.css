@@ -370,6 +370,10 @@ h2 {
   border-bottom: 3px solid #f6ce95;
 }
 
+.film-info__wrapper {
+  white-space: nowrap;
+}
+
 .film-info__well {
   border-top-left-radius: 0;
   border-top-right-radius: 0;

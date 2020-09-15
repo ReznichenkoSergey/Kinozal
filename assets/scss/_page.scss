@@ -18,6 +18,10 @@
         }
     }
 
+    &__wrapper{
+        white-space: nowrap;
+    }
+
     &__well {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
