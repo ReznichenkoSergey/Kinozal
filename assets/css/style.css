@@ -64,6 +64,10 @@
   font-size: 0.875rem;
 }
 
+.embed-responsive-16by9 {
+  border: 1px solid #dddddd;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -344,6 +348,107 @@ h2 {
   width: 30px;
   margin: 0.25em 0 0 0;
   border-bottom: 3px solid #f6ce95;
+}
+
+.film-info {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.2em;
+}
+
+.film-info-row {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+
+.film-info__title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid #f6ce95;
+}
+
+.film-info .embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-info .well {
+  border-color: #dddddd;
+  background-color: #f1f1f1;
+}
+
+.film-info__badge {
+  font-size: 0.8em;
+}
+
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-comment-form,
+.film-comments,
+.film-description {
+  position: relative;
+  overflow: hidden;
+}
+
+.film-comment-form h2::after,
+.film-comments h2::after,
+.film-description h2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid #f6ce95;
+}
+
+.film-comment-form h2::before,
+.film-comments h2::before,
+.film-description h2::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  border-bottom: 3px solid #f6ce95;
+}
+
+/*
+.film-comment-form,
+.film-comments {
+    position: relative;
+    overflow: hidden;
+
+    & h2 {
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            margin: 0.85em 0 0 $gap;
+            border-bottom: 3px solid lighten($color-accent, 30%);
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 30px;
+            margin: 0.25em 0 0 0;
+            border-bottom: 3px solid lighten($color-accent, 30%);
+        }
+    }
+}*/
+.film-comment-form__button {
+  float: right;
 }
 
 .left-sidebar .panel:last-of-type {
