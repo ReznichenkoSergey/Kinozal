@@ -1,0 +1,32 @@
+.footer {
+    padding-top: $gap * 3;
+    color: $color-light;
+    background-color: $color-dark;
+
+    & ul {
+        padding: 0;
+        list-style: none;
+
+        & a {
+            color: #777777;
+            transition: color 0.25s;
+        }
+    }
+
+    & li:hover{
+        & a {
+            color: $color-light;
+        }
+    }
+
+    &-bottom {
+        & a {
+            color: $color-light;
+        }
+    }
+
+    &-fifth {
+        margin: 20px 0;
+        text-align: center;
+    }
+}

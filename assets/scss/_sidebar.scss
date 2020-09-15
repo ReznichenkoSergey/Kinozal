@@ -38,6 +38,7 @@
 
 .site-news {
     &-item {
+        position: relative;
         clear: both;
         
         &:not(:last-child) {
