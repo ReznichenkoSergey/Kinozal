@@ -156,9 +156,9 @@ h2 {
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  -webkit-transition: color o 0.25s;
-  -o-transition: color o 0.25s;
-  transition: color o 0.25s;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -370,15 +370,15 @@ h2 {
   border-bottom: 3px solid #f6ce95;
 }
 
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .film-info .embed-responsive {
   border: 1px solid #dddddd;
   border-bottom: none;
   border-radius: 4px 4px 0 0;
-}
-
-.film-info__well {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .film-info .well {
@@ -422,31 +422,6 @@ h2 {
   border-bottom: 3px solid #f6ce95;
 }
 
-/*
-.film-comment-form,
-.film-comments {
-    position: relative;
-    overflow: hidden;
-
-    & h2 {
-        &::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            margin: 0.85em 0 0 $gap;
-            border-bottom: 3px solid lighten($color-accent, 30%);
-        }
-
-        &::before {
-            position: absolute;
-            content: "";
-            left: 0;
-            width: 30px;
-            margin: 0.25em 0 0 0;
-            border-bottom: 3px solid lighten($color-accent, 30%);
-        }
-    }
-}*/
 .film-comment-form__button {
   float: right;
 }
